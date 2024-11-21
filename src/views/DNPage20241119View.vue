@@ -67,7 +67,7 @@ export default {
   },
   methods: {
     updateImage(imageName) {
-      this.currentImage = require(`@/assets/images/20241118/${imageName}`);
+      this.currentImage = require(`@/assets/images/20241119/${imageName}`);
     },
     scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' }); // 平滑滾動至頂部

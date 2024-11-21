@@ -9,7 +9,7 @@
         改版日期
       </div>
       <div v-if="!isCollapsed" class="menu">
-        <button @click="navigate('DNPage20241118')">2024-11-18</button>
+        <button @click="navigate('DNPage20241119')">2024-11-19</button>
       </div>
     </aside>
 
@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import DNPage20241118View from './views/DNPage20241118View.vue';
+import DNPage20241119View from './views/DNPage20241119View.vue';
 
 export default {
   data() {
@@ -53,7 +53,7 @@ export default {
     },
   },
   components: {
-    DNPage20241118View,
+    DNPage20241119View,    
   },
   methods: {
     toggleSidebar() {

@@ -1,24 +1,5 @@
-# dn-app
+# Changelog
 
-## Project setup
-```
-npm install
-```
+- 2024-11-21：Initial commit
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### DN Page：[Link](https://shaohsienlo.github.io/dn-app/).
