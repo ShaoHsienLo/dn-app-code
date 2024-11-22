@@ -30,8 +30,8 @@
         <p class="title">【商城】11月改版禮盒</p>
         <div class="buttons">
           <button @click="updateImage('你要的改版禮盒.jpeg')">你要的改版禮盒</button>
-          <button @click="updateImage('螢光三件套&兔子武器.jpeg')">螢光三件套/兔子武器</button>
-          <button @click="updateImage('怪盜時裝&復刻時裝.jpeg')">怪盜時裝/復刻時裝</button>
+          <button @click="updateImage('螢光三件套&兔子武器.jpeg')">螢光三件套&兔子武器</button>
+          <button @click="updateImage('怪盜時裝&復刻時裝.jpeg')">怪盜時裝&復刻時裝</button>
           <button @click="updateImage('小龐寵物.jpeg')">小龐寵物</button>
         </div>
       </div>
@@ -39,7 +39,10 @@
       <div class="row">
         <p class="title">【網頁活動】挖掘大師-進化之路</p>
         <div class="buttons">
-          <button @click="openInNewTab('https://dragonnest-event.beanfun.com/Event/E20241119/Index')">挖掘大師-進化之路</button>
+          <button @click="openInNewTab('https://dragonnest-event.beanfun.com/Event/E20241119/Index')">
+            挖掘大師-進化之路
+            <img src="@/assets/icons/link-solid.svg" alt="連結" class="icon" />
+          </button>
         </div>
       </div>
     </div>
@@ -124,12 +127,19 @@ export default {
   cursor: pointer;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+  display: inline-flex;
+  align-items: center;
 }
 
 .buttons button:hover {
   background-color: #cd7318;
 }
 
+.buttons button .icon {
+  height: 1em;
+  width: auto;
+  margin-left: 0.3em;
+}
 
 /* 下區域樣式 */
 .bottom-section {

@@ -10,6 +10,9 @@
       </div>
       <div v-if="!isCollapsed" class="menu">
         <button @click="navigate('DNPage20241119')">2024-11-19</button>
+        <button @click="navigate('DNPage20241022')">2024-10-22</button>
+        <button @click="navigate('DNPage20240924')">2024-09-24</button>
+        <button @click="navigate('DNPage20240820')">2024-08-20</button>
       </div>
     </aside>
 
@@ -22,6 +25,9 @@
 
 <script>
 import DNPage20241119View from './views/DNPage20241119View.vue';
+import DNPage20241022View from './views/DNPage20241022View.vue';
+import DNPage20240924View from './views/DNPage20240924View.vue';
+import DNPage20240820View from './views/DNPage20240820View.vue';
 
 export default {
   data() {
@@ -53,7 +59,10 @@ export default {
     },
   },
   components: {
-    DNPage20241119View,    
+    DNPage20241119View,
+    DNPage20241022View,    
+    DNPage20240924View,
+    DNPage20240820View,
   },
   methods: {
     toggleSidebar() {
