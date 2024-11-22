@@ -1,4 +1,4 @@
 //update.sh
 git add .
-git commit -m 'update 2024-0820&0924&1022 pages'
+git commit -m 'update current activities hyperlinks'
 git push -u origin master

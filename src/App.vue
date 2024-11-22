@@ -6,6 +6,19 @@
         {{ isCollapsed ? '☰' : '✖' }}
       </button>
       <div v-if="!isCollapsed" class="menu-header">
+        常用活動超連結
+      </div>
+      <div v-if="!isCollapsed" class="menu">
+        <div class="quick-links">
+          <a class="link-box" href="https://dragonnest-event.beanfun.com/Event/E20241119/Index" target="_blank">
+            挖掘<br>大師
+            <img src="@/assets/icons/link-solid.svg" alt="連結" class="icon" />
+          </a>
+          <a class="link-box" href="#"></a>
+          <a class="link-box" href="#"></a>
+        </div>
+      </div>
+      <div v-if="!isCollapsed" class="menu-header">
         改版日期
       </div>
       <div v-if="!isCollapsed" class="menu">
@@ -60,7 +73,7 @@ export default {
   },
   components: {
     DNPage20241119View,
-    DNPage20241022View,    
+    DNPage20241022View,
     DNPage20240924View,
     DNPage20240820View,
   },
@@ -126,10 +139,60 @@ export default {
 
 .sidebar .menu-header {
   font-weight: bold;
-  text-align: center; /* 水平置中 */
-  margin-bottom: 1rem; /* 與下方按鈕區域保持間距 */
+  text-align: center;
+  /* 水平置中 */
+  margin-block: 1rem;
+  /* 與下方按鈕區域保持間距 */
   color: #ffffff;
   font-size: 1.5rem;
+}
+
+.quick-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.link-box {
+  position: relative; /* 設定相對定位，方便內部元素絕對定位 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80px; /* 正方形寬度 */
+  height: 80px; /* 正方形高度 */
+  background-color: white;
+  color: black; /* 文字顏色 */
+  text-decoration: none; /* 去除超連結的下劃線 */
+  font-size: 1.5rem; /* 字體大小 */
+  font-weight: bold; /* 字體加粗 */
+  overflow: hidden; /* 防止圖像溢出 */
+}
+
+.link-box:hover {
+  background-color: #908e8e;
+}
+
+.link-box .icon {
+  position: absolute; /* 絕對定位 */
+  width: 80%; /* 設置圖像寬度為父元素的 90% */
+  height: 80%; /* 設置圖像高度為父元素的 90% */
+  top: 50%; /* 將圖像的頂部定位到父元素高度的中間 */
+  left: 50%; /* 將圖像的左邊定位到父元素寬度的中間 */
+  transform: translate(-50%, -50%); /* 調整位置，使圖像的中心點與父元素的中心對齊 */
+  opacity: 0.1; /* 浮水印效果，設置透明度 */
+  z-index: 1; /* 保證浮水印在文字下層 */
+}
+
+
+.link-box:hover .icon {
+  opacity: 0.2; /* 滑鼠懸停時增加透明度 */
+}
+
+.link-box span {
+  position: relative; /* 讓文字位於浮水印之上 */
+  z-index: 2; /* 保證文字在浮水印之上 */
 }
 
 /* 主內容區域樣式 */
