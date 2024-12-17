@@ -4,7 +4,7 @@
     <div class="top-section">
       <!-- 第一行 -->
       <div class="row">
-        <p class="title">【改版】宇宙偶像哈洛麗!</p>
+        <p class="title">【改版】神聖天堂巢穴</p>
         <div class="buttons">
           <button @click="updateImage('神聖天堂巢穴.jpeg')">神聖天堂巢穴</button>
           <button @click="updateImage('次元龍玉.jpeg')">次元龍玉</button>
@@ -20,10 +20,10 @@
       </div>
       <!-- 第二行 -->
       <div class="row">
-        <p class="title">【活動】屠龍勇士任務箱</p>
+        <p class="title">【活動】聖誕節抽獎活動</p>
         <div class="buttons">
           <button @click="updateImage('聖誕節抽獎活動.jpeg')">聖誕節抽獎活動</button>
-          <button @click="updateImage('征服吧! 神聖天堂救世主.jpeg')">征服吧! 神聖天堂救世主</button>
+          <button @click="updateImage('征服吧神聖天堂救世主.jpeg')">征服吧! 神聖天堂救世主</button>
           <button @click="updateImage('5周年活動.jpeg')">5周年活動</button>
           <button @click="updateImage('與鴨霸的棒棒餅乾.jpeg')">與鴨霸的棒棒餅乾</button>
           <button @click="updateImage('2025跨年登入送.jpeg')">2025跨年登入送</button>
@@ -34,7 +34,7 @@
       </div>
       <!-- 第三行 -->
       <div class="row">
-        <p class="title">【商城】11月改版禮盒</p>
+        <p class="title">【商城】12月改版禮盒</p>
         <div class="buttons">
           <button @click="updateImage('12月改版禮盒.jpeg')">12月改版禮盒</button>
           <button @click="updateImage('崩壞刻印頭盔&上衣擴張.jpeg')">崩壞刻印頭盔&上衣擴張</button>
@@ -44,7 +44,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <!-- <div class="row">
         <p class="title">【網頁活動】挖掘大師-進化之路</p>
         <div class="buttons">
           <button @click="openInNewTab('https://dragonnest-event.beanfun.com/Event/E20241119/Index')">
@@ -52,7 +52,7 @@
             <img src="@/assets/icons/link-solid.svg" alt="連結" class="icon" />
           </button>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- 下區域 -->
